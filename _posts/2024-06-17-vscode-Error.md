@@ -22,4 +22,7 @@ description: vscode使用git提交时报错
 
 `git config user.name "John Doe"`
 
-`git config user.email johndoe@example.com`
+`git config user.email "johndoe@example.com"`
+
+`git config user.name` 查看用户名
+`git config user.email` 查看邮箱地址
