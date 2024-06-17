@@ -2,8 +2,8 @@
 layout: post
 title:  置顶示例
 date:   2018-04-01
-categories: sticky
-tags: 另外一个tag
+categories: 计算机
+tags: jekyll
 description: 记得添加 is_sticky
 #is_sticky: true
 ---
