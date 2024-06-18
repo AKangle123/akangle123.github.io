@@ -17,6 +17,5 @@ permalink: /about.html
 
 仅仅配置 _config.yml 文件即可。
 
-反馈或功能添加请前往 <https://2049bbs.xyz/>
-
+仓库地址 [AKangle123](https://github.com/AKangle123/akangle123.github.io)
 仓库地址 [TerminusBot/terminus-jekyll-template](https://github.com/TerminusBot/terminus-jekyll-template)
