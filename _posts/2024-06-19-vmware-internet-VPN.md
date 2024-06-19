@@ -33,7 +33,7 @@ VMware 自带了一个虚拟网络编辑器，我们可以在这里查看所有 
 打开之后点击一下“更改设置”来显示全部内容。<br />
 在这里我们注意到，VMware 默认已经为我们创建了一个 NAT 类型的虚拟网，其名称为 VMnet8（需要记一下这个名字）。<br />
 （ VMware 默认都会创建一个 NAT 类型虚拟网，故此处不再赘述如何创建并配置一个 NAT 虚拟网）<br />
-!<div align=center>
+<div align=center>
 <img src="https://github.com/AKangle123/akangle123.github.io/raw/master/attachments/Clipboard_2024-06-19-17-55-42.png">
 </div>
 
@@ -44,7 +44,7 @@ VMware 自带了一个虚拟网络编辑器，我们可以在这里查看所有 
 这一步我们要做的事情是：将虚拟机连接到上述虚拟网。<br />
 
 首先，每台虚拟机都有一个“网络适配器”的选项。<br />
-!<div align=center>
+<div align=center>
 <img src="https://github.com/AKangle123/akangle123.github.io/raw/master/attachments/Clipboard_2024-06-19-17-56-00.png">
 </div>
 
@@ -54,7 +54,7 @@ VMware 自带了一个虚拟网络编辑器，我们可以在这里查看所有 
 在这里，我们可以选择要将虚拟机连接到“虚拟网络编辑器”中的哪个网络。<br />
 我们将网络选择为之前记住的：VMnet8。
 
-!<div align=center>
+<div align=center>
 <img src="https://github.com/AKangle123/akangle123.github.io/raw/master/attachments/Clipboard_2024-06-19-17-56-15.png">
 </div>
 
@@ -66,7 +66,7 @@ VMware 自带了一个虚拟网络编辑器，我们可以在这里查看所有 
 ### 主机的 ip 地址
 我们可以打开主机的任务管理器，找到上面记住的 VMnet8 。<br />
 
-!<div align=center>
+<div align=center>
 <img src="https://github.com/AKangle123/akangle123.github.io/raw/master/attachments/Clipboard_2024-06-19-17-56-27.png">
 </div>
 
@@ -77,11 +77,11 @@ VMware 自带了一个虚拟网络编辑器，我们可以在这里查看所有 
 以代理软件“clash”为例。<br />
 
 首先，我们需要打开“允许来自局域网的连接”来保证来自虚拟机的连接不会被主机拒绝。<br />
-!<div align=center>
+<div align=center>
 <img src="https://github.com/AKangle123/akangle123.github.io/raw/master/attachments/clash1.PNG">
 </div>
 然后，我们可以在软件主界面的底部看到 SOCKS5 和 HTTP 代理端口<br />
-!<div align=center>
+<div align=center>
 <img src="https://github.com/AKangle123/akangle123.github.io/raw/master/attachments/clash2.PNG">
 </div>
 ## 在虚拟机中配置代理
@@ -89,12 +89,14 @@ VMware 自带了一个虚拟网络编辑器，我们可以在这里查看所有 
 我们已经知道了主机在“虚拟路由器”下的地址以及代理软件的端口，现在我们只需要在虚拟机当中将代理信息设置为上方记录的 ip 地址与端口即可。<br />
 
 打开 Ubuntu 的设置，选择“网络”选择卡。<br />
-!<div align=center>
+<div align=center>
 <img src="https://github.com/AKangle123/akangle123.github.io/raw/master/attachments/Clipboard_2024-06-19-18-02-30.png">
 </div>
 
 可以看到其下有一个“网络代理”设置。<br />
-
+<div align=center>
+<img src="https://github.com/AKangle123/akangle123.github.io/raw/master/attachments/3897726368.png">
+</div>
 点开，将代理模式调成手动，输入上方记录的 主机 ip 地址 和 代理软件端口<br />
 
 那么虚拟机的代理就配置完成了，我们可以尝试使用一下。<br />
