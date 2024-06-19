@@ -34,7 +34,7 @@ VMware 自带了一个虚拟网络编辑器，我们可以在这里查看所有 
 在这里我们注意到，VMware 默认已经为我们创建了一个 NAT 类型的虚拟网，其名称为 VMnet8（需要记一下这个名字）。<br />
 （ VMware 默认都会创建一个 NAT 类型虚拟网，故此处不再赘述如何创建并配置一个 NAT 虚拟网）<br />
 !<div align=center>
-<img src="https://github.com/AKangle123/akangle123.github.io/blob/master/attachments/Clipboard_2024-06-19-17-55-42.png">
+<img src="https://github.com/AKangle123/akangle123.github.io/raw/master/attachments/Clipboard_2024-06-19-17-55-42.png">
 </div>
 
 我们可以将这个 NAT 类型的虚拟网看成一个虚拟的路由器，于是我们只需要同时将主机和虚拟机连接在这个“路由器”下面，就可以实现双向通信了，接下来我将陈述该怎么做。<br />
@@ -45,7 +45,7 @@ VMware 自带了一个虚拟网络编辑器，我们可以在这里查看所有 
 
 首先，每台虚拟机都有一个“网络适配器”的选项。<br />
 !<div align=center>
-<img src="https://github.com/AKangle123/akangle123.github.io/blob/master/attachments/Clipboard_2024-06-19-17-56-00.png">
+<img src="https://github.com/AKangle123/akangle123.github.io/raw/master/attachments/Clipboard_2024-06-19-17-56-00.png">
 </div>
 
 
@@ -55,7 +55,7 @@ VMware 自带了一个虚拟网络编辑器，我们可以在这里查看所有 
 我们将网络选择为之前记住的：VMnet8。
 
 !<div align=center>
-<img src="https://github.com/AKangle123/akangle123.github.io/blob/master/attachments/Clipboard_2024-06-19-17-56-15.png">
+<img src="https://github.com/AKangle123/akangle123.github.io/raw/master/attachments/Clipboard_2024-06-19-17-56-15.png">
 </div>
 
 这样，就相当于把虚拟机连接在虚拟“路由器”的下面了。<br />
@@ -67,7 +67,7 @@ VMware 自带了一个虚拟网络编辑器，我们可以在这里查看所有 
 我们可以打开主机的任务管理器，找到上面记住的 VMnet8 。<br />
 
 !<div align=center>
-<img src="https://github.com/AKangle123/akangle123.github.io/blob/master/attachments/Clipboard_2024-06-19-17-56-27.png">
+<img src="https://github.com/AKangle123/akangle123.github.io/raw/master/attachments/Clipboard_2024-06-19-17-56-27.png">
 </div>
 
 这个地址就是主机在这个“虚拟路由器”下的地址，我们需要将其记录下来。<br />
@@ -78,11 +78,11 @@ VMware 自带了一个虚拟网络编辑器，我们可以在这里查看所有 
 
 首先，我们需要打开“允许来自局域网的连接”来保证来自虚拟机的连接不会被主机拒绝。<br />
 !<div align=center>
-<img src="https://github.com/AKangle123/akangle123.github.io/blob/master/attachments/clash1.PNG">
+<img src="https://github.com/AKangle123/akangle123.github.io/raw/master/attachments/clash1.PNG">
 </div>
 然后，我们可以在软件主界面的底部看到 SOCKS5 和 HTTP 代理端口<br />
 !<div align=center>
-<img src="https://github.com/AKangle123/akangle123.github.io/blob/master/attachments/clash2.PNG">
+<img src="https://github.com/AKangle123/akangle123.github.io/raw/master/attachments/clash2.PNG">
 </div>
 ## 在虚拟机中配置代理
 此处以 Ubuntu 为例。<br />
@@ -90,7 +90,7 @@ VMware 自带了一个虚拟网络编辑器，我们可以在这里查看所有 
 
 打开 Ubuntu 的设置，选择“网络”选择卡。<br />
 !<div align=center>
-<img src="https://github.com/AKangle123/akangle123.github.io/blob/master/attachments/Clipboard_2024-06-19-18-02-30.png">
+<img src="https://github.com/AKangle123/akangle123.github.io/raw/master/attachments/Clipboard_2024-06-19-18-02-30.png">
 </div>
 
 可以看到其下有一个“网络代理”设置。<br />
