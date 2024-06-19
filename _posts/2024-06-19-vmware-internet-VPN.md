@@ -1,7 +1,15 @@
 ---
+layout: post
+
 title: VMware虚拟机使用主机代理软件
-created: '2024-06-19T09:44:25.585Z'
-modified: '2024-06-19T10:03:31.484Z'
+
+date: 2024-06-19
+
+categories: 计算机
+
+tags: vmware
+
+description: 虚拟机使用主机代理上网
 ---
 
 # VMware虚拟机使用主机代理软件
